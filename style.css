@@ -1,0 +1,606 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #098FCF;
+    --dark-blue: #043C77;
+    --grey: #F9F9F9;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.btn {
+    padding: 15px 36px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    height: 46px;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 90px;
+}
+.header__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+
+.header__upper__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__number {
+    padding-left: 32px;
+    background-image: url(./icons/phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 35px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.header__button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 176px;
+}
+
+.btn__icon {
+    margin-right: 10px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    height: 60px;
+}
+
+.header__nav__link {
+    margin-right: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.title-h2 {
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.title-h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.hero {
+    margin-bottom: 100px;
+}
+
+.hero__form {
+    padding: 49px 96px;
+    width: 1120px;
+    height: 289px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero__form__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+.hero__form__title span {
+    color: var(--blue);
+}
+
+.hero__form__fields {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 832px;
+}
+
+.field__name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.hero__form__input {
+    padding: 13px 15px;
+    height: 46px;
+    width: 273px;
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+}
+
+.checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.table {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+th {
+    vertical-align: middle;
+    height: 56px;
+    background: var(--dark-blue);
+    color: white;
+}
+
+td {
+    padding: 16px 30px;
+    border: 1px solid rgba(231, 231, 231, 1);
+}
+
+.invisible {
+    border: 0;
+}
+
+.special-td {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    background-color: var(--blue);
+    height: 20px;
+}
+
+.price {
+    margin-bottom: 100px;
+}
+
+.delivery {
+    width: 100%;
+    padding: 74px 0;
+    background-color: var(--grey);
+}
+
+.delivery__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.delivery__field {
+    margin-bottom: 16px;
+}
+
+.delivery__input {
+    padding: 15px;
+    width: 409px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+}
+
+.delivery__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    width: 638px;
+    height: 441px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+.delivery__right__top {
+    width: 100%;
+}
+.delivery__text {
+    width: 346px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #565656;
+}
+
+.delivery__h3 {
+    margin-bottom: 16px;
+}
+
+.delivery__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid #E7E7E7;
+}
+
+.delivery__text__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.work {
+    margin-bottom: 100px;
+}
+
+.work__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 353px;
+    height: 394px;
+    background-color: var(--dark-blue);
+    color: white;
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+}
+
+.bg-click {
+    background-image: url(./icons/click.svg);
+}
+
+.bg-phone {
+    background-image: url(./icons/phone-1.svg);
+}
+
+.bg-oil {
+    background-image: url(./icons/gas.svg);
+}
+
+.time {
+    padding-bottom: 31px;
+    align-self: flex-end;
+    margin-bottom: 45px;
+    background-image: url(./icons/arrow_right.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.work__item__title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.work__item__text {
+    width: 283px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.advantages {
+    background-color: var(--grey);
+    padding: 80px 0;
+}
+
+.advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 353px;
+    height: 138px;
+    background-color: white;
+}
+
+.advantages__item:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.advantages__item__title {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.advantages__item__text {
+    width: 246px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #565656;
+}
+
+.advantages__img {
+    width: 48px;
+    height: 48px;
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-wrapper {
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    padding: 28px 20px;
+    width: 257px;
+    height: 357px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.certificates{
+    padding: 100px 0;
+}
+.certificates__title {
+    display: inline;
+    width: 100%;
+    white-space: nowrap;
+}
+.certificates__img {
+    width: 217px;
+    height: 301.44px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-button-prev3:after,
+.swiper-button-next3:after {
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev3,
+.swiper-button-next3 {
+    position: relative;
+    top: 0; left: 0;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #D5D5D5;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+.swiper-buttons {
+    width: 128px;
+    height: 56px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners__swiper {
+    height: 200px;
+}
+
+.partners__slide {
+    width: auto;
+    height: 112px;
+    padding: 0px;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sld-1 {
+    background-image: url(./images/LUK_OIL_Logo_kyr\ 1.jpg);
+}
+
+.sld-2 {
+    background-image: url(./images/gazprom.jpg);
+}
+
+.sld-3 {
+    background-image: url(./images/Rosneft_Logo\ 1.jpg);
+}
+
+.sld-4 {
+    background-image: url(./images/Tatneft-Logo\ 1.jpg);
+}
+
+.feedback {
+    padding: 80px 0;
+    background-color: var(--grey);
+}
+
+.feedback__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    box-shadow: none;
+}
+.feedback__name {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+.feedback__post {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #565656;
+}
+.feedback__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+.feedback__link {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--dark-blue);
+}
+
+.feedback__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.questions {
+    padding: 40px 0;
+    background-color: var(--dark-blue);
+}
+
+.questions__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.questions__title {
+    color: white;
+    text-align: center;
+}
+
+.questions__text {
+    width: 450px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questions__form {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.questions__input {
+    padding: 15px;
+    width: 240px;
+    height: 46px;
+}
+
+.questions__link {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer__top {
+    padding: 30px 0;
+    background-color: var(--grey);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer__bottom {
+    padding: 10px 0;
+}
+
+.copyright {
+    font-size: 12px;
+    color:rgb(175, 175, 175);
+}
+
+.footer__nav ul li {
+    margin-bottom: 5px;
+}
+
+.footer__nav__item {
+    color: black;
+}
+
+.footer__top__right {
+    text-align: right;
+}
+.footer__tel {
+    color: var(--blue);
+    font-weight: 900;
+}
