@@ -61,3 +61,20 @@ const swiper = new Swiper('.swiper', {
      el: '.swiper-scrollbar',
    },
  });
+
+///////////////////////////////
+///INPUT MASKS
+///////////////////////////////
+let selector1 = document.getElementById("number1");
+let selector2 = document.getElementById("number2");
+let selector3 = document.getElementById("number3");
+
+let im = new Inputmask("+7 (999)-999-99-99", {
+  clearMaskOnLostFocus: false,
+});
+let im2 = new Inputmask("+7 (999)-999-99-99", {
+  clearMaskOnLostFocus: true,
+});
+im.mask(selector1);
+im.mask(selector2);
+im2.mask(selector3);

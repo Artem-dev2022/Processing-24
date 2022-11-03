@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Процессинг24</title>
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__upper">
-                <img class="header__upper__left" src="./images/logo.svg" alt="Лого">
+                <img loading="lazy" class="header__upper__left" src="./images/logo.svg" alt="Лого">
                 <div class="header__upper__right">
                     <a type="tel" href="#" class="header__number">8 (495) 127-82-80</a>
                     <button class="header__button btn">Напишите нам</button>
@@ -47,8 +46,8 @@
                         <input class="hero__form__input input" type="text" placeholder="Иван">
                     </div>
                     <div class="hero__form__field">
-                        <p class="field__name">Ваше имя</p>
-                        <input class="hero__form__input input" type="text" placeholder="Иван">
+                        <p class="field__name">Ваше телефон</p>
+                        <input id="number1" class="hero__form__input input" type="text">
                     </div>
                     <button class="btn">Заказать топливо</button>
                 </div>
@@ -194,7 +193,7 @@
                 </div>
                 <div class="delivery__field">
                     <div class="field__name">Номер телефона</div>
-                    <input class="delivery__input" type="text" placeholder="тут надо маску">
+                    <input class="delivery__input" id="number2" type="text">
                 </div>
             </div>
             <div class="delivery__right">
@@ -256,42 +255,42 @@
             <h2 class="title-h2">Преимущества сервиса</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__item">
-                    <img class="advantages__img" src="./icons/certificate.svg" alt="certificate">
+                    <img loading="lazy" class="advantages__img" src="./icons/certificate.svg" alt="certificate">
                     <div class="advantages__item__right">
                         <p class="advantages__item__title">Качество топлива</p>
                         <p class="advantages__item__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img class="advantages__img" src="./icons/clock.svg" alt="certificate">
+                    <img loading="lazy" class="advantages__img" src="./icons/clock.svg" alt="certificate">
                     <div class="advantages__item__right">
                         <p class="advantages__item__title">Качество топлива</p>
                         <p class="advantages__item__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img class="advantages__img" src="./icons/ruble.svg" alt="certificate">
+                    <img loading="lazy" class="advantages__img" src="./icons/ruble.svg" alt="certificate">
                     <div class="advantages__item__right">
                         <p class="advantages__item__title">Качество топлива</p>
                         <p class="advantages__item__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img class="advantages__img" src="./icons/place.svg" alt="certificate">
+                    <img loading="lazy" class="advantages__img" src="./icons/place.svg" alt="certificate">
                     <div class="advantages__item__right">
                         <p class="advantages__item__title">Качество топлива</p>
                         <p class="advantages__item__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img class="advantages__img" src="./icons/shield.svg" alt="certificate">
+                    <img loading="lazy" class="advantages__img" src="./icons/shield.svg" alt="certificate">
                     <div class="advantages__item__right">
                         <p class="advantages__item__title">Качество топлива</p>
                         <p class="advantages__item__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img class="advantages__img" src="./icons/way.svg" alt="certificate">
+                    <img loading="lazy" class="advantages__img" src="./icons/way.svg" alt="certificate">
                     <div class="advantages__item__right">
                         <p class="advantages__item__title">Качество топлива</p>
                         <p class="advantages__item__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
@@ -312,12 +311,12 @@
             </div>
             </div>
             <div class="swiper-wrapper swiper-wrapper1">
-                <div class="swiper-slide"><img class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img class="certificates__img" src="./images/sert-3.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img class="certificates__img" src="./images/sert-4.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
+                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
+                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
+                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-3.jpg" alt="сертификат"></div>
+                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-4.jpg" alt="сертификат"></div>
+                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
+                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
             </div>
             <!-- <div class="swiper-pagination"></div> -->
             <!-- <div class="swiper-scrollbar"></div> -->
@@ -398,7 +397,7 @@
 
         <form class="questions__form">
             <input class="questions__input" type="text" placeholder="Ваше имя">
-            <input class="questions__input" type="text" placeholder="Номер телефона">
+            <input id="number3" class="questions__input" type="text" placeholder="Номер телефона">
             <button class="btn">Перезвоните мне</button>
         </form>
         <p>Нажимая на кнопу "Перезвоните мне" я соглашаюсь с <a class="questions__link" href="#">политикой конфиденциальности</a></p>
@@ -409,7 +408,7 @@
     <div class="footer__top">
         <div class="container footer__container">
             <div class="footer__top__left">
-                <img src="./images/logo.svg" alt="лого">
+                <img loading="lazy" src="./images/logo.svg" alt="лого">
                 <p class="copyright">© 2019 ООО "Процессинг 24"</p>
             </div>
             <div class="footer__nav">
@@ -438,7 +437,7 @@
     </div>
 </footer>
 
-
+    <script src="./inputmask.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
