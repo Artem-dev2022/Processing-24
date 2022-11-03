@@ -1,0 +1,118 @@
+@media (max-width: 1120px) {
+    .burger {
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+    .burger__img {
+        width: 40px;
+    }
+    .burger__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .container {
+        width: 668px;
+    }
+    .header {
+        margin-bottom: 10px;
+    }
+    .header__nav__container {
+        position: relative;
+    }
+    .header__upper__right {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: var(--blue);
+        
+    }
+    .header__nav__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header__nav__item {
+        margin-bottom: 20px;
+    }
+    .header__nav__link {
+        color: white;
+    }
+    .title-h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+    .title-h2 {
+        font-size: 30px;
+    }
+    .hero__form {
+        height: auto;
+        padding: 20px;
+    }
+    .hero__form__input {
+        width: 200px;
+    }
+    .hero__form__fields {
+        width: 100%;
+    }
+    td, th {
+        padding: 15px;
+        font-size: 14px;
+    }
+    .delivery__input {
+        width: 250px;
+    }
+    .delivery__right {
+        padding: 15px;
+        width: 400px;
+        height: 425px;
+    }
+    .delivery__text {
+        width: 280px;
+    }
+    .work__item {
+        padding: 10px;
+        width: 210px;
+        height: auto;
+    }
+    .work__item__title {
+        font-size: 16px;
+    }
+    .work__item__text {
+        font-size: 14px;
+        width: 200px;
+        line-height: 120%;
+    }
+    .advantages__item {
+        width: 320px;
+        margin-bottom: 30px;
+    }
+    .questions {
+        padding: 10px 0;
+    }
+    .questions__title {
+        margin-bottom: 10px;
+    }
+    .questions__form {
+        width: 100%;
+    }
+    .questions__input {
+        width: 230px;
+    }
+    .questions__text {
+        width: 100%;
+    }
+    .footer__nav {
+        display: none;
+    }
+
+}

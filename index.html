@@ -21,25 +21,29 @@
                     <button class="header__button btn">Напишите нам</button>
                     <button class="header__button btn btn__user"><img class="btn__icon" src="./icons/icons/user.svg" alt=""> Личный кабинет</button>
                 </div>
+                <button onclick="openMenu()" class="burger burger__menu"><img class="burger__img" src="./icons/burger-menu-svgrepo-com.svg"></button>
             </div>
         </div>
             <nav class="header__nav">
-                <div class="container">
-                    <a href="#" class="header__nav__link">Доставка топлива</a>
-                    <a href="#" class="header__nav__link">Топливные карты</a>
-                    <a href="#" class="header__nav__link">АЗС</a>
-                    <a href="#" class="header__nav__link">Цены на топливо</a>
-                    <a href="#" class="header__nav__link">О компании</a>
-                    <a href="#" class="header__nav__link">Контакты</a>
+                <button onclick="closeMenu()" class="burger burger__close"><img class="burger__img" src="./icons/close-svgrepo-com.svg"></button>
+                <div class="container header__nav__container">
+                    <ul class="header__nav__list">
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Доставка топлива</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Топливные карты</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">АЗС</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Цены на топливо</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">О компании</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Контакты</a></li>
+                    </ul>
                 </div>
             </nav>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1 class="hero__title title-h2">Доставка топлива</h1>
+            <h1 class="hero__title title-h1">Доставка топлива</h1>
             <form class="hero__form">
-                <h2 class="hero__form__title">Быстрый <span>заказ топлива</span></h2>
+                <h2 class="hero__form__title title-h2">Быстрый <span>заказ топлива</span></h2>
                 <div class="hero__form__fields">
                     <div class="hero__form__field">
                         <p class="field__name">Ваше имя</p>
@@ -302,15 +306,15 @@
 
 <section class="certificates">
     <div class="container">
-        <div class="swiper swiper1">
+        <div class="swiper">
             <div class="swiper__top">
                 <h2 class="certificates__title title-h2">Сертификаты качества топлива</h2>
             <div class="swiper-buttons">
-                <div class="certificates__swiper-button-prev swiper-button-prev"></div>
-                <div class="certificates__swiper-button-next swiper-button-next"></div>
+                <div class="swiper-button-prev1 swiper-button-prev"></div>
+                <div class="swiper-button-next1 swiper-button-next"></div>
             </div>
             </div>
-            <div class="swiper-wrapper swiper-wrapper1">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
                 <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
                 <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-3.jpg" alt="сертификат"></div>
@@ -318,8 +322,7 @@
                 <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
                 <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
@@ -327,13 +330,15 @@
 <section class="partners">
     <div class="container">
         <h2 class="title-h2">Наши партнеры</h2>
-        <div class="swiper partners__swiper swiper2">
+        <div class="swiper2 swiper partners__swiper ">
             <div class="swiper-wrapper swiper-wrapper2">
                 <div class="swiper-slide partners__slide sld-1"></div>
                 <div class="swiper-slide partners__slide sld-2"></div>
                 <div class="swiper-slide partners__slide sld-3"></div>
                 <div class="swiper-slide partners__slide sld-4"></div>
             </div>
+            <div class="swiper-button-prev1 swiper-button-prev"></div>
+            <div class="swiper-button-next1 swiper-button-next"></div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
@@ -400,7 +405,7 @@
             <input id="number3" class="questions__input" type="text" placeholder="Номер телефона">
             <button class="btn">Перезвоните мне</button>
         </form>
-        <p>Нажимая на кнопу "Перезвоните мне" я соглашаюсь с <a class="questions__link" href="#">политикой конфиденциальности</a></p>
+        <p class="questions__text">Нажимая на кнопу "Перезвоните мне" я соглашаюсь с <a class="questions__link" href="#">политикой конфиденциальности</a></p>
     </div>
 </section>
 
