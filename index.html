@@ -22,6 +22,7 @@
                     <button class="header__button btn btn__user"><img class="btn__icon" src="./icons/icons/user.svg" alt=""> Личный кабинет</button>
                 </div>
                 <button onclick="openMenu()" class="burger burger__menu"><img class="burger__img" src="./icons/burger-menu-svgrepo-com.svg"></button>
+                <div class="block-screen"></div>
             </div>
         </div>
             <nav class="header__nav">
@@ -29,10 +30,36 @@
                 <div class="container header__nav__container">
                     <ul class="header__nav__list">
                         <li class="header__nav__item"><a href="#" class="header__nav__link">Доставка топлива</a></li>
-                        <li class="header__nav__item"><a href="#" class="header__nav__link">Топливные карты</a></li>
-                        <li class="header__nav__item"><a href="#" class="header__nav__link">АЗС</a></li>
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">Топливные карты<img id="maps" src="./icons/arrow.svg"></a>
+                            <ul class="header__dropdown__list" id="maps__list">
+                                <li class="header__dropdown__item"><a href="#">Топливная карта 1</a></li>
+                                <li class="header__dropdown__item"><a href="#">Топливная карта 2</a></li>
+                                <li class="header__dropdown__item"><a href="#">Топливная карта 3</a></li>
+                                <li class="header__dropdown__item"><a href="#">Топливная карта 4</a></li>
+                                <li class="header__dropdown__item"><a href="#">Топливная карта 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">АЗС<img id="azs" src="./icons/arrow.svg"></a>
+                            <ul class="header__dropdown__list" id="azs__list">
+                                <li class="header__dropdown__item"><a href="#">АЗС 1</a></li>
+                                <li class="header__dropdown__item"><a href="#">АЗС 2</a></li>
+                                <li class="header__dropdown__item"><a href="#">АЗС 3</a></li>
+                                <li class="header__dropdown__item"><a href="#">АЗС 4</a></li>
+                                <li class="header__dropdown__item"><a href="#">АЗС 5</a></li>
+                            </ul>
+                        </li>
                         <li class="header__nav__item"><a href="#" class="header__nav__link">Цены на топливо</a></li>
-                        <li class="header__nav__item"><a href="#" class="header__nav__link">О компании</a></li>
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">О компании<img id="about" src="./icons/arrow.svg"></a>
+                            <ul class="header__dropdown__list" id="about__list">
+                                <li class="header__dropdown__item"><a href="#">Руководители</a></li>
+                                <li class="header__dropdown__item"><a href="#">Структура</a></li>
+                                <li class="header__dropdown__item"><a href="#">История</a></li>
+                                <li class="header__dropdown__item"><a href="#">Политика</a></li>
+                            </ul>
+                        </li>
                         <li class="header__nav__item"><a href="#" class="header__nav__link">Контакты</a></li>
                     </ul>
                 </div>
@@ -65,6 +92,9 @@
     <section class="price">
         <div class="container">
             <h2 class="price__title title-h2">Стоимость топлива</h2>
+            <div class="price__table">
+
+            
             <table class="table">
                 <thead>
                     <tr class="table__head">
@@ -88,29 +118,29 @@
                         <td rowspan="3">ЕВРО-5</td>
                         <td>Газпромнефть</td>
                         <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>44.43 р.</td>
                     </tr>
                     <tr>
                         
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
                     </tr>
                     <tr>
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Роснефть</td>
+                        <td>42.34 р.</td>
+                        <td>41.64 р.</td>
                     </tr>
                     <tr>
                         <td rowspan="2">ЕВРО-4</td>
                         <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>-</td>
+                        <td>-</td>
                     </tr>
                     <tr>
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Лукойл</td>
+                        <td>41.16 р.</td>
+                        <td>40.67 р.</td>
                     </tr>
                     <tr >
                         <td class="invisible"></td>
@@ -126,48 +156,49 @@
                         <td rowspan="3">ЕВРО-5</td>
                         <td>Газпромнефть</td>
                         <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>44.43 р.</td>
                     </tr>
                     <tr>
                         
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Роснефть</td>
+                        <td>42.34 р.</td>
+                        <td>41.64 р.</td>
                     </tr>
                     <tr>
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
                     </tr>
                     <tr>
                         <td rowspan="2">ЕВРО-4</td>
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Лукойл</td>
+                        <td>41.16 р.</td>
+                        <td>40.67 р.</td>
                     </tr>
                     <tr>
                         <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>-</td>
+                        <td>-</td>
                     </tr>
                     <tr>
                         <td rowspan="3">ЕВРО-3</td>
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Роснефть</td>
+                        <td>42.34 р.</td>
+                        <td>41.64 р.</td>
                     </tr>
                     <tr>
                         <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>-</td>
+                        <td>-</td>
                     </tr>
                     <tr>
-                        <td>Газпромнефть</td>
-                        <td>45.43 р.</td>
-                        <td>45.43 р.</td>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
                     </tr>
                 </tfoot>
             </table>
+            </div>
         </div>
     </section>
 
@@ -185,7 +216,8 @@
                 </div>
                 <div class="delivery__field">
                     <div class="field__name">Объем топлива</div>
-                    <input class="delivery__input" type="text">
+                    <input class="delivery__input" type="number" id="volume" min="100" max="3000" placeholder="100 литров">
+                    <input type="range" min="100" max="3000" value="50" class="delivery__slider" id="myRange">
                 </div>
                 <div class="delivery__field">
                     <div class="field__name">Место доставки</div>
@@ -205,7 +237,7 @@
                     <h3 class="delivery__h3 title-h3">Итого</h3>
                     <div class="delivery__row">
                         <p class="delivery__text__title">Стоимость топлива</p>
-                        <p class="title-h4">77 350.00 ₽</p>
+                        <p class="title-h4" id="total">0 ₽</p>
                     </div>
                     <div class="delivery__row">
                         <div class="delivery__row__left">
@@ -213,14 +245,14 @@
                             <p class="delivery__text">Цена и стоимость указаны ориентировочно. 
                             <br>Точные цену и стоимость собщит наш менеджер при подтверждении заявки.</p>
                         </div>
-                        <p class="title-h4">45.50 ₽</p>
+                        <p class="title-h4" id="price">45.50 ₽</p>
                     </div>
                     <div class="delivery__row">
                         <div class="delivery__row__left">
                             <p class="delivery__text__title mb-10">Выгода:</p>
                             <p class="delivery__text">При цене на АЗС  49.59 ₽  за литр, цены актуальны на  23.11.2020 г. </p>
                         </div>
-                        <p class="title-h4">6 953.00 ₽</p>
+                        <p class="title-h4" id="profit">0 ₽</p>
                     </div>
                 </div>
                 <button class="btn">Заказать топливо</button>
@@ -229,26 +261,33 @@
         </div>
         
     </section>
+
     <section class="work">
         <div class="container">
             <h2 class="work__title title-h2">Как мы работаем</h2>
             <div class="work__wrapper">
                 <div class="work__item bg-click">
                     <p class="time">1-3 мин.</p>
-                    <p class="work__item__title">Оформление заявки</p>
-                    <p class="work__item__text">Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить</p>
+                    <div class="work__item__info">
+                        <p class="work__item__title">Оформление заявки</p>
+                        <p class="work__item__text">Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить</p>
+                    </div>
+                    
                 </div>
                 <div class="work__item bg-phone">
                     <p class="time">1-3 мин.</p>
-                    <p class="work__item__title">Подтверждение заявки менеджером</p>
-                    <p class="work__item__text">Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+                    <div class="work__item__info">
+                        <p class="work__item__title">Подтверждение заявки менеджером</p>
+                        <p class="work__item__text">Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+                    </div>
                 </div>
                 <div class="work__item bg-oil">
-                    <p class="time">1-3 мин.</p>
-                    <p class="work__item__title">Заправка вашего автомобиля</p>
-                    <p class="work__item__text">В назначенное время приедет заправщик и заправит автомобиль топливом.
-                        <br><br>
-                        Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+                    <p class="time">30-90 мин.</p>
+                    <div class="work__item__info">
+                        <p class="work__item__title">Заправка вашего автомобиля</p>
+                        <p class="work__item__text"> В назначенное время приедет заправщик и заправит автомобиль топливом.</p>
+                        <p class="work__item__text work__item__text__small">Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,7 +345,7 @@
 
 <section class="certificates">
     <div class="container">
-        <div class="swiper">
+        <div class="swiper certificates__swiper">
             <div class="swiper__top">
                 <h2 class="certificates__title title-h2">Сертификаты качества топлива</h2>
             <div class="swiper-buttons">
@@ -315,12 +354,12 @@
             </div>
             </div>
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-3.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-4.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
-                <div class="swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
+                <div class="swiper-slide certificates__swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
+                <div class="swiper-slide certificates__swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
+                <div class="swiper-slide certificates__swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-3.jpg" alt="сертификат"></div>
+                <div class="swiper-slide certificates__swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-4.jpg" alt="сертификат"></div>
+                <div class="swiper-slide certificates__swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-1.jpg" alt="сертификат"></div>
+                <div class="swiper-slide certificates__swiper-slide"><img loading="lazy" class="certificates__img" src="./images/sert-2.jpg" alt="сертификат"></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -332,10 +371,10 @@
         <h2 class="title-h2">Наши партнеры</h2>
         <div class="swiper2 swiper partners__swiper ">
             <div class="swiper-wrapper swiper-wrapper2">
-                <div class="swiper-slide partners__slide sld-1"></div>
-                <div class="swiper-slide partners__slide sld-2"></div>
-                <div class="swiper-slide partners__slide sld-3"></div>
-                <div class="swiper-slide partners__slide sld-4"></div>
+                <div class="swiper-slide partners__slide"><img class="partners__img" src="./images/lukoil.jpg" alt="логотип Лукойл"></div>
+                <div class="swiper-slide partners__slide"><img class="partners__img" src="./images/gazprom.jpg" alt="логотип Газпромнефть"></div>
+                <div class="swiper-slide partners__slide"><img class="partners__img" src="./images/rosneft.jpg" alt="логотип Роснефть"></div>
+                <div class="swiper-slide partners__slide"><img class="partners__img" src="./images/tatneft.jpg" alt="логотип Татнефть"></div>
             </div>
             <div class="swiper-button-prev1 swiper-button-prev"></div>
             <div class="swiper-button-next1 swiper-button-next"></div>
@@ -413,7 +452,7 @@
     <div class="footer__top">
         <div class="container footer__container">
             <div class="footer__top__left">
-                <img loading="lazy" src="./images/logo.svg" alt="лого">
+                <img class="footer__logo" loading="lazy" src="./images/logo.svg" alt="лого">
                 <p class="copyright">© 2019 ООО "Процессинг 24"</p>
             </div>
             <div class="footer__nav">
@@ -437,7 +476,7 @@
     </div>
     <div class="footer__bottom">
         <div class="container">
-            <a href="#">Политика конфиденциальности</a>
+            <a class="privacy" href="#">Политика конфиденциальности</a>
         </div>
     </div>
 </footer>
